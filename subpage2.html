@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>SEAN PARK</title>
+<link rel="stylesheet" type="text/css" href="css/subpage.css">
+<link rel="shortcut icon" href="img/logo_bg.png" type="image/x-icon">
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<style>
+	.map_wrap{position:relative; margin: 30px 0 40px; font-family:"NanumBarunGothic", nbg, dotum, sans-serif; font-size: 14px; color:#333; line-height:180%; *zoom:1;}
+	.map_wrap:after{content:''; display:block; clear:both;}
+	.map_wrap .map_tit{margin: 50px 0 30px; padding: 50px 0 13px; border-bottom: 1.5px solid #9a9a9a; text-align:center;}
+	.map_wrap .text_att {width:90%; padding-left:4%;}
+	.map_wrap .map_first p {padding-top:2%; font-size:16px;}
+	.map_wrap .map_second {float:left; width:50%;}
+	.map_wrap .map_second dl dt {font-weight:bold;}
+	.map_wrap .map_second dl dd{padding-bottom:10px;}
+	.map_wrap .map_third {float:right; width:45%;}
+	.map_wrap .map_third ul li{padding-bottom:10px;}
+	.map_wrap .map_third ul li a{text-decoration:none; color:#333;}
+	.map_wrap .map_third ul li a:hover{text-decoration:underline;}
+</style>
+</head>
+<body onload="initialize()">
+<!-- skip -->
+	<dl class="skip">
+		<dt class="blind">Skip Navigation</dt>
+		<dd><a href="#containers">Skip to Content</a></dd>
+	</dl>
+<!-- //skip -->
+<div id="wrap">
+	<!-- Header -->
+	    <div id="header">
+        <div class="header_area">
+	        <h1 class ="logoArea"><a href="index.html"><img src="img/logo_main.png" alt="로고 이미지"></a></h1>
+	        <ul class="navArea">
+	            <li class="navMenu on">회사소개
+	              <ul>
+	                <li><a href="subpage1.html">에코쥬스 소개</a></li>
+	                <li><a href="subpage2.html">오시는 길</a></li>
+	              </ul>
+	            </li>
+	            <li class="navMenu">메뉴소개
+	              <ul>
+	                <li><a href="subpage3.html">음료</a></li>
+	                <li><a href="subpage4.html">디저트</a></li>
+	              </ul>
+	            </li>
+	            <li class="navMenu">에코과일
+	              <ul>
+	                <li><a href="subpage5.html">원산지 소개</a></li>
+	                <li><a href="subpage6.html">수입 과정</a></li>
+	              </ul></li>
+	            <li class="navMenu">창업안내
+	              <ul>
+	                <li><a href="subpage7.html">창업절차</a></li>
+	                <li><a href="subpage8.html">FAQ</a></li>
+	              </ul>
+	            </li>
+	        </ul>
+        </div>
+	    </div>
+<!-- //Header -->
+<!-- Location -->
+<div id="location">
+	<div class="imgbn1"></div>
+	<div class="routebn">
+		<div class="navtext"><a href="index.html"> Home </a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="subpage1.html"> 회사소개 </a>&nbsp;&nbsp;>&nbsp;&nbsp;오시는 길</div>
+	</div>
+</div>
+<!-- //Location -->
+<!-- Containers -->
+<div id="containers">
+	<div class="map_wrap">
+			<div class="map_first">
+					<h2 class="map_tit">오시는 길</h2>
+					<div id="map_view" style="width:97%; height:500px; margin: 0 auto"></div>
+					<p class="text_att">• <strong>주 소</strong> : [135-080] 서울특별시 강남구 역삼동 635-17 장연빌딩 1층</p>
+			</div>
+			<div class="map_second">
+				<h2 class="map_tit">오시는 길 안내</h2>
+				<dl class="text_att">
+					<dt>[버스 이용시]</dt>
+							<dd>• 강남역 정류장 하차:144, 145, 146, 200, 363, 3418, 3423, 9403<br>(역삼동 방향 도보 5분거리)</dd>
+					<dt>[지하철 이용시]</dt>
+							<dd>• 강남역 하차(2호선): 역삼동 방향 도보 3분거리<br>• 신논현역 하차(9호선): 역삼동 방향 도보 10분거리</dd>
+					<dt>[자가용 이용시]</dt>
+							<dd>• 잠실방면에서 오실경우<br>잠실역-송파대로-강남방면 직진- 강남역-우회전-테헤란로5길<br>(잠실에서 뚝방길 이용하시면 편리합니다)<br>
+								• 성남방면에서 오실 경우<br>성남대로-신논현역-강남, 잠실대교방면 직진-강남역-좌회전-테헤란로5길</dd>
+				</dl>
+			</div>
+			<div class="map_third">
+				<h2 class="map_tit">매장 이용 안내</h2>
+				<ul class="text_att">
+					<li>• <strong>이용 시간</strong> : 오전 9시 ~ 오후 11시 (연중무휴)</li>
+					<li>• <strong>주차 이용</strong> : 매장 이용시 뒷편 주차장 1시간 무료</li>
+					<li>• <strong>대표 전화</strong> : 1588-0000</li>
+					<li>• <strong>상담 문의</strong> :<a href="mailto:web_Seanpark@naver.com" target="_blank"> web_seanpark@naver.com</a></li>
+				</ul>
+			</div>
+	</div>
+</div>
+<!-- //Containers -->
+<!-- Footer -->
+<div id="footer">
+	<div class="footer_wrap">
+    <a href="file:///C:/Users/k/Desktop/html/index.html" target="_blank"><img src="img/logo_foot.png" alt="ECO JUICE LOGO"></a><br>
+    <div class="footer_info">
+      <em>© 2016 SEAN PARK</em>
+      <p>• 본 사이트의 저작물은 영리 목적이 아닌 개인 포트폴리오 용도로 이용하기 위함을 알립니다 •</p>
+    </div>
+	</div>
+</div>
+<!-- //Footer -->
+</div>
+
+<script>
+	function initialize() {
+		var Y_point			= 37.499937;
+		var X_point			= 127.029075;
+		var zoomLevel		= 16;
+		var markerTitle		= "에코쥬스";
+		var markerMaxWidth	= 300;
+		var contentString	= '<div>' +
+		'<strong>에코쥬스 강남본점</strong><br/>'+'<span>에코쥬스 강남점은 100% 과일 함량을 자랑하는 건강 쥬스 프랜차이즈 1호점입니다.'
+		var myLatlng = new google.maps.LatLng(Y_point, X_point);
+		var mapOptions = {
+							zoom: zoomLevel,
+							center: myLatlng,
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+		var marker = new google.maps.Marker({
+												position: myLatlng,
+												map: map,
+												title: markerTitle
+		});
+
+		var infowindow = new google.maps.InfoWindow(
+													{
+														content: contentString,
+														maxWidth: markerMaxWidth
+													}
+		);
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map, marker);
+		});
+	}
+</script>
+</body>
+</html>

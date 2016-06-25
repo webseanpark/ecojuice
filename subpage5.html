@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>SEAN PARK</title>
+<link rel="stylesheet" type="text/css" href="css/subpage.css">
+<link rel="shortcut icon" href="img/logo_bg.png" type="image/x-icon">
+<link href="css/pgwslider.min.css" rel="stylesheet" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/pgwslider.min.js"></script>
+<style>
+  .product_wrap{margin: 30px 0 60px; font-family:"NanumBarunGothic", nbg, dotum, sans-serif; color:#333;}
+  .product_wrap .product_tit{margin: 50px 0 30px; padding: 50px 0 13px; border-bottom: 1.5px solid #9a9a9a; text-align:center;}
+  .product_wrap .product_head{padding-bottom:5%; font-size:20px; font-weight:bold; color:#34ad58; text-align:center;}
+  .product_wrap .pgwSlider {width:980px; height:600px; display:block; }
+</style>
+</head>
+<body>
+<!-- skip -->
+	<dl class="skip">
+		<dt class="blind">Skip Navigation</dt>
+		<dd><a href="#containers">Skip to Content</a></dd>
+	</dl>
+<!-- //skip -->
+<div id="wrap">
+  <!-- Header -->
+	    <div id="header">
+        <div class="header_area">
+	        <h1 class ="logoArea"><a href="index.html"><img src="img/logo_main.png" alt="로고 이미지"></a></h1>
+	        <ul class="navArea">
+	            <li class="navMenu">회사소개
+	              <ul>
+	                <li><a href="subpage1.html">에코쥬스 소개</a></li>
+	                <li><a href="subpage2.html">오시는 길</a></li>
+	              </ul>
+	            </li>
+	            <li class="navMenu">메뉴소개
+	              <ul>
+	                <li><a href="subpage3.html">음료</a></li>
+	                <li><a href="subpage4.html">디저트</a></li>
+	              </ul>
+	            </li>
+	            <li class="navMenu on">에코과일
+	              <ul>
+	                <li><a href="subpage5.html">원산지 소개</a></li>
+	                <li><a href="subpage6.html">수입 과정</a></li>
+	              </ul></li>
+	            <li class="navMenu">창업안내
+	              <ul>
+	                <li><a href="subpage7.html">창업절차</a></li>
+	                <li><a href="subpage8.html">FAQ</a></li>
+	              </ul>
+	            </li>
+	        </ul>
+        </div>
+	    </div>
+<!-- //Header -->
+<!-- Location -->
+  <div id="location">
+    <div class="imgbn3"></div>
+    <div class="routebn"><div class="navtext"><a href="index.html"> Home </a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="subpage5.html"> 에코과일 </a>&nbsp;&nbsp;>&nbsp;&nbsp;원산지 소개</div></div>
+  </div>
+  <!-- //Location -->
+  <!-- Containers -->
+<div id="containers">
+  <div class="product_wrap">
+    	<h2 class="product_tit">원산지 소개</h2>
+      <div class="product_head">에코과일은 현지에서 직접 A급 과일만을 엄선하여 최고의 맛과 품질을 지향합니다.</div>
+      <ul class="pgwSlider">
+          <li><img src="img/farm01.jpg" alt="호주 케언즈 농장" data-description="호주 최대 규모의 농장에서 따스한 햇볕과 함께 영양분이 풍부한 토양 위에서 오늘도 무성하게 자라고 있습니다. "></li>
+          <li><img src="img/farm02.jpg" alt="필리핀 바기오 농장" data-description="필리핀 농장에서는 병충해 방지를 위해 봉지작업과 최소 120일 이상 성장한 열매를 수확합니다."></li>
+          <li><img src="img/farm03.jpg" alt="미국 플로리다 오렌지 농장" data-description="이 농장은 오렌지가 자라기 좋은 비옥한 토지를 자랑하고 있으며, 이곳 나무에 꽃이 피고 열매가 무르익을 때까지 신념을 가진 농부들이 한 알 한 알 정성을 다해 돌봅니다. "></li>
+          <li><img src="img/farm04.jpg" alt="태국 수파트라 랜드 농장" data-description="열대과일의 천국, 태국 현지 농장과 본사가 직접 협약을 맺어 최상의 품질만을 직수입합니다. "></li>
+      </ul>
+  </div>
+</div>
+<!-- //Containers -->
+<!-- Footer -->
+<div id="footer">
+	<div class="footer_wrap">
+    <a href="index.html" target="_blank"><img src="img/logo_foot.png" alt="ECO JUICE LOGO"></a><br>
+    <div class="footer_info">
+      <em>© 2016 SEAN PARK</em>
+      <p>• 본 사이트의 저작물은 영리 목적이 아닌 개인 포트폴리오 용도로 이용하기 위함을 알립니다 •</p>
+    </div>
+	</div>
+</div>
+<!-- //Footer -->
+</div>
+<script>
+  $(document).ready(function(){
+    $(document).ready(function() {
+        $('.pgwSlider').pgwSlider();
+    });
+  });
+</script>
+</body>
+</html>
